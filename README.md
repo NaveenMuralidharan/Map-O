@@ -69,6 +69,8 @@ erDiagram
 #### Technologies Used:
 Backend:
 MongoDB
+Express
+Node JS
 
 Frontend:
 React 
