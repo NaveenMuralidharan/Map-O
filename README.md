@@ -8,13 +8,24 @@
 ```mermaid
 erDiagram
     Process{
-        int ID
-    capabilityName String
-    processName String
-    processStages Array 
-    processOwner String
-    mermaidCode String
-    }
+        id              int
+        processName     String
+        orgUnit         String
+        processOwner    String
+        contactDetails  String
+        steps: [
+                   {
+                      order: int, 
+                      stakeholder: String,
+                      action: String,
+                      pass_to: String,
+                      purpose: String,
+                      channel: String, 
+                      frequency:String,
+                      tool: String  
+                   }
+                ]
+        }
 ```
 
 ### List of routes:
@@ -24,11 +35,11 @@ erDiagram
 ### Route Table
 | Endpoint | Method | Description |
 | -------- | -------- | -------- |
-| /maps | GET | brings user to the homepage where they're able to create new process map or sselect one to view 
-| /maps/:id | GET | brings user to a specific process map based on their selection
-| /maps | POST | creates a new process map |
-| /maps/:id | PUT | updates a specific process map based on the ID |
-| /maps/:id | DELETE | deletes a process map based on ID | 
+| /process | GET | brings user to the homepage where they're able to create new process map or select one to view 
+| /process/:id | GET | brings user to a specific process map based on their selection
+| /process | POST | creates a new process map |
+| /process/:id | PATCH | updates a specific process map based on the ID |
+| /process/:id | DELETE | deletes a process map based on ID | 
 
 
 #### List for frontend routes
