@@ -34,7 +34,7 @@ const processSchema = new mongoose.Schema({
         processName:    String,
         orgUnit:        String,
         processOwner:   String,
-        contactDetails: String,
+        type:           String,
 
         stages: [
             {   
@@ -91,6 +91,7 @@ app.get("/process", async (req, res) => {
 
 // CREATE ROUTE
 app.post("/process", async (req, res) => {
+    console.log("DEBUG post /process route ", req.body)
     try {
         res.json(await Process.create(req.body))
     } catch (error) {
