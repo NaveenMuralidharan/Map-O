@@ -35,17 +35,18 @@ const processSchema = new mongoose.Schema({
         orgUnit:        String,
         processOwner:   String,
         type:           String,
-
+        mermaidCode:    String,
         stages: [
             {   
+                order:          Number,
                 name:           String,
                 orgUnit:        String,
-                processOwner:   String,
+                stageOwner:     String,
                 contactDetails: String,
                 steps: [
                     {
                        order:       Number, 
-                       stakeholder: String,
+                       stepOwner:   String,
                        action:      String,
                        pass_to:     String,
                        purpose:     String,
