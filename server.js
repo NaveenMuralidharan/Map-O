@@ -8,7 +8,7 @@ const mongoose = require("mongoose")
 const cors = require("cors")
 const morgan = require("morgan")
 
-const PORT = 4000
+const PORT = process.env.PORT || 4000
 
 const { DATABASE_URL } = process.env 
 
