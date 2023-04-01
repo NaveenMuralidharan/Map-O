@@ -38,7 +38,7 @@ erDiagram
 | /process | GET | brings user to the homepage where they're able to create new process map or select one to view 
 | /process/:id | GET | brings user to a specific process map based on their selection
 | /process | POST | creates a new process map |
-| /process/:id | PATCH | updates a specific process map based on the ID |
+| /process/:id | PUT | updates a specific process map based on the ID |
 | /process/:id | DELETE | deletes a process map based on ID | 
 
 
