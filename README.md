@@ -87,3 +87,8 @@ Frontend:
 React 
 Javascript
 Mermaid JS
+
+#### Next steps:
+Debug BIG SVG chart generation 
+Modify model - Add more steps to stage
+Add clickable links to chart
