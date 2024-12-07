@@ -5,7 +5,7 @@
 #### Models:
 
 
-```mermaid
+```
 erDiagram
     Process{
         id              int
