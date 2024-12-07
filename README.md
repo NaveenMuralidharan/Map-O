@@ -16,7 +16,7 @@ Map-O Backend API provides the logic for managing process maps. This is the serv
 
 ## Project Overview
 
-Map-O Backend is a RESTful API that provides endpoints for managing process maps used in business process management. This backend is designed to work in conjunction with the frontend to create, view, update, and delete process maps in a seamless manner.
+Map-O Backend is a RESTful API that provides endpoints for managing process maps used in business process management. This backend is designed to work in conjunction with the frontend to create, view, update, and delete process maps in a seamless manner. The front-end, built with React JS and Mermaid JS is here, (https://github.com/NaveenMuralidharan/map-o_frontend)
 
 ## Technologies Used
 
@@ -24,7 +24,6 @@ Map-O Backend is a RESTful API that provides endpoints for managing process maps
 - **Express.js**: Web application framework for Node.js
 - **MongoDB**: NoSQL database for storing process map data
 - **Mongoose**: ODM (Object Document Mapper) for MongoDB
-- **Jest**: Testing framework
 
 ## Backend Routes
 
@@ -149,7 +148,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 For any questions or inquiries, please contact:
 
 - **Author**: Naveen Muralidharan
-- **Email**: naveenspec@gmail.com (replace with actual email)
+- **Email**: naveenspec@gmail.com 
 
 ## Future Improvements
 
